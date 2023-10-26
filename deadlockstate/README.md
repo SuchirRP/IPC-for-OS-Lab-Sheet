@@ -1,3 +1,5 @@
+#Deadlocking
+
 We will first define a macro called **max** of the value **10**, along with an array stack of the size **max**. Then, we will define two mutex objects with the names **pop_mutex** and **push_mutex**. To use the **stack**, we will initialize the value of **top** to **-1**. We will also define two variables of the type **pthread_t**, with the names **tid1** and **tid2**, to store two thread identifiers.
 
 We will invoke the **pthread_create** function to create the first thread, and we will assign the identifier returned by the function to the variable **tid1**. The thread will be created with the default attributes, and we will execute the push function to create this thread.
